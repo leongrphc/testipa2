@@ -17,12 +17,8 @@ class AppConfig {
       return configuredBaseUrl;
     }
 
-    switch (defaultTargetPlatform) {
-      case TargetPlatform.android:
-        return 'http://10.0.2.2:3000';
-      default:
-        return 'http://127.0.0.1:3000';
-    }
+    // LAN IP - PC'deki backend'e erişim için (aynı WiFi'de olmalı)
+    return 'http://192.168.161.1:3000';
   }
 
   static bool get isSupabaseConfigured {
