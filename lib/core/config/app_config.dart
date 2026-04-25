@@ -18,7 +18,7 @@ class AppConfig {
     }
 
     // LAN IP - PC'deki backend'e erişim için (aynı WiFi'de olmalı)
-    return 'http://192.168.161.1:3000';
+    return 'http://192.168.1.105:3000';
   }
 
   static bool get isSupabaseConfigured {
